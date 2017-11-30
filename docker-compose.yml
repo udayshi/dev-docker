@@ -15,7 +15,8 @@ elasticsearch:
 couchdb:
 #  build: ./couchdb/
   image: udaysh/couchdb2.1.1
-
+  environment:
+    -"COUCHDB_ADMIN_PASS=root"
 node:
   #build: ./node9/
   image: udaysh/node9.2
