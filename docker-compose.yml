@@ -9,12 +9,20 @@ db:
 redis:
 #  build: ./redis/
   image: udaysh/redis_4.0.2
+elasticsearch:
+#  build: ./elasticsearch/
+  image: udaysh/elasticsearch5.6.4
+couchdb:
+#  build: ./couchdb/
+  image: udaysh/couchdb2.1.1
+
 node:
   #build: ./node9/
   image: udaysh/node9.2
   links:
       - db:db
       - redis:redis
+      - elasticsearch:elasticsearch
   ports:
     - "3000:3000"
 php7:
@@ -25,6 +33,7 @@ php7:
   links:
     - db:db
     - redis:redis
+    - elasticsearch:elasticsearch
   environment:
     - "APP_ENV=dev"
   env_file:

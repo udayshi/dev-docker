@@ -3,6 +3,7 @@
 * Redis 4.0.2
 * Node v9.2.0
 * npm 5.5.1
+* Elastic Search 5.6.4
 
 
 
@@ -33,7 +34,17 @@ This image is published in the [Docker Hub]. Simply run this command below to ge
     docker pull udaysh/node9.2
 ```
 
+* Elastic Search 5.6.4 (https://hub.docker.com/r/udaysh/elasticsearch5.6.4/). 
+    
+```Shell
+    docker pull udaysh/elasticsearch5.6.4
+```
 
+* Couchdb 5.6.4 (https://hub.docker.com/r/udaysh/couchdb2.1.1/). 
+    
+```Shell
+    docker pull udaysh/couchdb2.1.1
+```
 
 ## Docker Compose
 
