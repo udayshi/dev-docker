@@ -4,6 +4,7 @@
 * Node v9.2.0
 * npm 5.5.1
 * Elastic Search 5.6.4
+* Couchdb 5.6.4
 
 
 
