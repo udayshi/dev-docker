@@ -1,0 +1,33 @@
+db:
+  image: udaysh/mariadb10
+  environment:
+    - "MYSQL_ROOT_PASSWORD=root"
+    - "MYSQL_USER=dev_user"
+    - "MYSQL_DATABASE=dev_db"
+    - "MYSQL_PASSWORD=dev_pass"
+
+redis:
+#  build: ./redis/
+  image: udaysh/redis_4.0.2
+node:
+  #build: ./node9/
+  image: udaysh/node9.2
+  links:
+      - db:db
+      - redis:redis
+  ports:
+    - "3000:3000"
+php7:
+  #build: ./php7/
+  image: udaysh/php7
+  volumes:
+      -  ./php7/manifest/src/:/var/www/html/
+  links:
+    - db:db
+    - redis:redis
+  environment:
+    - "APP_ENV=dev"
+  env_file:
+      - php7/php.env
+  labels:
+    - "com.lowecloud.proxy=php7.docker"
