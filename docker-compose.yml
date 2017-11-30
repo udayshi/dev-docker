@@ -12,11 +12,16 @@ redis:
 elasticsearch:
 #  build: ./elasticsearch/
   image: udaysh/elasticsearch5.6.4
+  ports: 
+    - "9200:9200"
+    - "9300:9300"
+
 couchdb:
 #  build: ./couchdb/
   image: udaysh/couchdb2.1.1
-  environment:
-    -"COUCHDB_ADMIN_PASS=root"
+  ports:
+    - "5984:5984"
+
 node:
   #build: ./node9/
   image: udaysh/node9.2
@@ -30,6 +35,9 @@ node:
 php7:
   #build: ./php7/
   image: udaysh/php7
+  ports:
+    - "80:80"
+    - "443:443"
   volumes:
       -  ./php7/manifest/src/:/var/www/html/
   links:
