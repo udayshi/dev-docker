@@ -12,3 +12,4 @@ cd ../redis && docker build -t udaysh/redis_4.0.2 .
 docker push udaysh/redis_4.0.2
 
 cd ../mariadb10 && docker build -t udaysh/mariadb10 .
+docker push udaysh/mariadb10
