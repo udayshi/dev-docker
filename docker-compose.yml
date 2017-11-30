@@ -23,6 +23,7 @@ node:
       - db:db
       - redis:redis
       - elasticsearch:elasticsearch
+      - couchdb:couchdb
   ports:
     - "3000:3000"
 php7:
@@ -34,6 +35,7 @@ php7:
     - db:db
     - redis:redis
     - elasticsearch:elasticsearch
+    - couchdb:couchdb
   environment:
     - "APP_ENV=dev"
   env_file:
