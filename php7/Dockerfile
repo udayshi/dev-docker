@@ -18,6 +18,16 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
     curl -LsS https://phar.phpunit.de/phpunit.phar -o /usr/local/bin/phpunit && \
     chmod +x /usr/local/bin/phpunit
 RUN apk --no-cache add php7-redis   
+RUN apk --no-cache add  php7-tokenizer php7-ctype
+#RUN mkdir -p /usr/local/src && cd /usr/local/src && \
+#composer create-project --prefer-dist laravel/laravel laravel && \
+#composer create-project symfony/skeleton sf4 && \
+#composer create-project symfony/skeleton sf3  "3.4.*" && \
+#composer create-project zendframework/skeleton-application zf2 "2.*" && \
+#composer create-project zendframework/skeleton-application zf3 && \
+# tar -zcf laravel.tar.gz laravel/ && tar -zcf sf4.tar.gz sf4/ && tar -zcf sf3.tar.gz sf3/ && tar -zcf zf3.tar.gz zf3/ && && tar -zcf zf2.tar.gz zf2/ && \
+#rm -rf laravel sf4 sf3 zf2 zf3
+
 
 
 
@@ -38,6 +48,7 @@ COPY manifest/config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
 COPY manifest/src/ /var/www/html/
+RUN mkdir /usr/local/src && cp -a /var/www/html/*.tar.gz /usr/local/src
 
 
 EXPOSE 80 443
