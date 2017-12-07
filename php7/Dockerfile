@@ -32,7 +32,6 @@ RUN apk --no-cache add  php7-tokenizer php7-ctype
 
 
 
-
 # Cleaning up
 RUN rm -rf /usr/local/src /tmp/* /usr/share/man /var/cache/apk/*
 
