@@ -16,6 +16,9 @@ elasticsearch:
     - "9200:9200"
     - "9300:9300"
 
+mongodb:
+#  build: ./redis/
+  image: udaysh/mongodb
 couchdb:
 #  build: ./couchdb/
   image: udaysh/couchdb2.1.1
@@ -35,9 +38,6 @@ node:
 php7:
   #build: ./php7/
   image: udaysh/php7
-  ports:
-    - "80:80"
-    - "443:443"
   volumes:
       -  ./php7/manifest/src/:/var/www/html/
   links:
