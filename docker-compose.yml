@@ -1,10 +1,10 @@
-db:
-  image: udaysh/mariadb10
-  environment:
-    - "MYSQL_ROOT_PASSWORD=root"
-    - "MYSQL_USER=dev_user"
-    - "MYSQL_DATABASE=dev_db"
-    - "MYSQL_PASSWORD=dev_pass"
+#db:
+#  image: udaysh/mariadb10
+#  environment:
+#    - "MYSQL_ROOT_PASSWORD=root"
+#    - "MYSQL_USER=dev_user"
+#    - "MYSQL_DATABASE=dev_db"
+#    - "MYSQL_PASSWORD=dev_pass"
 
 redis:
 #  build: ./redis/
