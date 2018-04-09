@@ -3,13 +3,11 @@ MAINTAINER shiuday@gmail.com
 
 RUN apk --no-cache add php7 php7-fpm php7-mysqli php7-json php7-openssl php7-curl \
     php7-zlib php7-xml php7-phar php7-intl php7-dom php7-xmlreader php7-ctype \
-    php7-mbstring php7-gd php7-iconv
+    php7-mbstring php7-gd php7-iconv  php7-redis     php7-tokenizer php7-ctype
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
     curl -LsS https://phar.phpunit.de/phpunit.phar -o /usr/local/bin/phpunit && \
     chmod +x /usr/local/bin/phpunit
-RUN apk --no-cache add php7-redis   
-RUN apk --no-cache add  php7-tokenizer php7-ctype
 RUN composer self-update
 
 
