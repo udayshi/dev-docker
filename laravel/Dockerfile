@@ -17,6 +17,7 @@ WORKDIR /
 
 COPY ./src/app.tar.gz /
 RUN tar -zxf app.tar.gz
+RUN chmod -R 777 app/storage/
 
 
 EXPOSE 80 443
