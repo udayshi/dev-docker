@@ -1,0 +1,4 @@
+php7:
+  image: udaysh/python3
+  labels:
+    - "com.lowecloud.proxy=python3.docker"
