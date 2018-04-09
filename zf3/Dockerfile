@@ -10,7 +10,6 @@ COPY manifest/php.ini /etc/php7/conf.d/php_custom.ini
 # Configure supervisord
 COPY manifest/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-
 # Add application
 #RUN mkdir -p /app
 WORKDIR /
