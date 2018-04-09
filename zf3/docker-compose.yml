@@ -1,0 +1,4 @@
+php7:
+  image: udaysh/zf3
+  labels:
+    - "com.lowecloud.proxy=zf3.docker"
