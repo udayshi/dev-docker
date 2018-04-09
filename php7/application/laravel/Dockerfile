@@ -15,5 +15,6 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY ../manifest/src/laravel.tar.gz /app
 RUN tar -zxf laravel.tar.gz
+
 EXPOSE 80 443
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
