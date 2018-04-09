@@ -1,0 +1,7 @@
+php7:
+  image: udaysh/php7
+  volumes:
+      -  ./manifest/src/sf3:/app/
+      - ./manifest/config/sf3.conf:/etc/nginx/nginx.conf
+  labels:
+    - "com.lowecloud.proxy=php7.docker"

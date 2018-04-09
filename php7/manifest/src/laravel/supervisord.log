@@ -1,0 +1,10 @@
+2018-04-09 14:36:36,406 CRIT Supervisor running as root (no user in config file)
+2018-04-09 14:36:36,409 INFO supervisord started with pid 1
+2018-04-09 14:36:37,412 INFO spawned: 'nginx' with pid 9
+2018-04-09 14:36:37,413 INFO spawned: 'php-fpm' with pid 10
+2018-04-09 14:36:38,444 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:36:38,444 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:37:09,155 WARN received SIGTERM indicating exit request
+2018-04-09 14:37:09,155 INFO waiting for nginx, php-fpm to die
+2018-04-09 14:37:09,158 INFO stopped: php-fpm (exit status 0)
+2018-04-09 14:37:09,259 INFO stopped: nginx (exit status 0)

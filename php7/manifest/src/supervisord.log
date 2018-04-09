@@ -338,3 +338,33 @@
 2017-12-01 11:52:32,400 INFO spawned: 'php-fpm' with pid 10
 2017-12-01 11:52:33,803 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2017-12-01 11:52:33,803 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:28:14,325 CRIT Supervisor running as root (no user in config file)
+2018-04-09 14:28:14,329 INFO supervisord started with pid 1
+2018-04-09 14:28:15,332 INFO spawned: 'nginx' with pid 9
+2018-04-09 14:28:15,335 INFO spawned: 'php-fpm' with pid 10
+2018-04-09 14:28:15,343 INFO exited: nginx (exit status 1; not expected)
+2018-04-09 14:28:15,343 INFO gave up: nginx entered FATAL state, too many start retries too quickly
+2018-04-09 14:28:16,369 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:30:36,601 WARN received SIGTERM indicating exit request
+2018-04-09 14:30:36,602 INFO waiting for php-fpm to die
+2018-04-09 14:30:36,604 INFO stopped: php-fpm (exit status 0)
+2018-04-09 14:30:42,531 CRIT Supervisor running as root (no user in config file)
+2018-04-09 14:30:42,534 INFO supervisord started with pid 1
+2018-04-09 14:30:43,537 INFO spawned: 'nginx' with pid 9
+2018-04-09 14:30:43,539 INFO spawned: 'php-fpm' with pid 10
+2018-04-09 14:30:44,567 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:30:44,567 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:32:37,653 WARN received SIGTERM indicating exit request
+2018-04-09 14:32:37,654 INFO waiting for nginx, php-fpm to die
+2018-04-09 14:32:37,657 INFO stopped: php-fpm (exit status 0)
+2018-04-09 14:32:37,777 INFO stopped: nginx (exit status 0)
+2018-04-09 14:32:45,388 CRIT Supervisor running as root (no user in config file)
+2018-04-09 14:32:45,391 INFO supervisord started with pid 1
+2018-04-09 14:32:46,393 INFO spawned: 'nginx' with pid 9
+2018-04-09 14:32:46,394 INFO spawned: 'php-fpm' with pid 10
+2018-04-09 14:32:47,424 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:32:47,424 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-09 14:36:13,313 WARN received SIGTERM indicating exit request
+2018-04-09 14:36:13,315 INFO waiting for nginx, php-fpm to die
+2018-04-09 14:36:13,318 INFO stopped: php-fpm (exit status 0)
+2018-04-09 14:36:13,409 INFO stopped: nginx (exit status 0)
