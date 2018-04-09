@@ -1,4 +1,0 @@
-php7:
-  image: udaysh/laravel
-  labels:
-    - "com.lowecloud.proxy=php7.docker"
