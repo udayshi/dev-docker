@@ -1,14 +1,5 @@
-FROM alpine:3.7
+FROM udaysh:alpine3.7
 MAINTAINER shiuday@gmail.com
-
-RUN apk upgrade --update && apk --no-cache add \
-            curl \
-            vim \
-            bash \
-            git \
-            wget \
-            supervisor \
-            nginx
 
 RUN apk --no-cache add php7 php7-fpm php7-mysqli php7-json php7-openssl php7-curl \
     php7-zlib php7-xml php7-phar php7-intl php7-dom php7-xmlreader php7-ctype \
