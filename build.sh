@@ -16,6 +16,14 @@ if [ "$line" != "$check" ]; then
            build=1
            build_dir='laravel'
            build_img='laravel';
+     elif [ "sf4/" == "$check" ]; then
+               build=1
+               build_dir='sf4'
+               build_img='sf4';
+   elif [ "sf3/" == "$check" ]; then
+               build=1
+               build_dir='sf3'
+               build_img='sf3';
     elif [ "node/" == "$check" ]; then
            build=1
            build_dir='node'

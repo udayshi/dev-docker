@@ -1,4 +1,4 @@
 php7:
-  image: udaysh/laravel
+  image: udaysh/sf4
   labels:
-    - "com.lowecloud.proxy=laravel.docker"
+    - "com.lowecloud.proxy=sf4.docker"
