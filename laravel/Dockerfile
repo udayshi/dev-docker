@@ -15,8 +15,8 @@ COPY manifest/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 #RUN mkdir -p /app
 WORKDIR /
 
-COPY ./src/laravel.tar.gz /
-RUN tar -zxf laravel.tar.gz && mv laravel/ app/
+COPY ./src/app.tar.gz /
+RUN tar -zxf app.tar.gz
 
 
 EXPOSE 80 443
