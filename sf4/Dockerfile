@@ -19,6 +19,5 @@ COPY ./src/app.tar.gz /
 RUN tar -zxf app.tar.gz
 RUN chmod -R 777 app/var/
 
-
 EXPOSE 80 443
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
