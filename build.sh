@@ -16,6 +16,14 @@ if [ "$line" != "$check" ]; then
            build=1
            build_dir='node'
            build_img='node9.2';
+    elif [ "alpine_3.6/" == "$check" ]; then
+           build=1
+           build_dir='alpine_3.6'
+           build_img='alpine3.6';
+    elif [ "alpine_3.7/" == "$check" ]; then
+           build=1
+           build_dir='alpine_3.7'
+           build_img='alpine3.7';
     elif [ "redis/" == "$check" ]; then
            build=1
            build_dir='redis'
