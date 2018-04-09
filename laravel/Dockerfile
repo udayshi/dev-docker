@@ -12,12 +12,12 @@ COPY manifest/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 
 # Add application
-RUN mkdir -p /app
-WORKDIR /app
+#RUN mkdir -p /app
+WORKDIR /
 
-COPY ./src/laravel.tar.gz /app
+COPY ./src/laravel.tar.gz /
 RUN tar -zxf laravel.tar.gz
-RUN mv laravel/* . && rm -rf laravel
+RUN mv laravel app
 
 EXPOSE 80 443
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
