@@ -24,6 +24,14 @@ if [ "$line" != "$check" ]; then
                build=1
                build_dir='sf3'
                build_img='sf3';
+   elif [ "zf2/" == "$check" ]; then
+               build=1
+               build_dir='zf2'
+               build_img='zf2';
+   elif [ "zf3/" == "$check" ]; then
+               build=1
+               build_dir='zf3'
+               build_img='zf3';
     elif [ "node/" == "$check" ]; then
            build=1
            build_dir='node'

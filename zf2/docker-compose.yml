@@ -1,4 +1,4 @@
 php7:
-  image: udaysh/sf3
+  image: udaysh/zf2
   labels:
-    - "com.lowecloud.proxy=sf3.docker"
+    - "com.lowecloud.proxy=zf2.docker"
