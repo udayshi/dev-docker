@@ -9,4 +9,3 @@ RUN apk upgrade --update && apk --no-cache add \
             wget \
             supervisor \
             nginx
-
