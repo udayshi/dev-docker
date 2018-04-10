@@ -1,0 +1,4 @@
+python3:
+  image: udaysh/flask
+  labels:
+    - "com.lowecloud.proxy=flask.docker"

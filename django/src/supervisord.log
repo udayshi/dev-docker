@@ -1,0 +1,20 @@
+2018-04-10 13:52:42,354 CRIT Supervisor running as root (no user in config file)
+2018-04-10 13:52:42,357 INFO supervisord started with pid 1
+2018-04-10 13:52:43,362 INFO spawned: 'nginx' with pid 9
+2018-04-10 13:52:43,364 INFO spawned: 'django' with pid 10
+2018-04-10 13:52:44,367 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-10 13:52:44,367 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-10 13:53:19,721 WARN received SIGTERM indicating exit request
+2018-04-10 13:53:19,722 INFO waiting for nginx, django to die
+2018-04-10 13:53:19,724 INFO stopped: django (terminated by SIGTERM)
+2018-04-10 13:53:19,808 INFO stopped: nginx (exit status 0)
+2018-04-10 13:53:38,863 CRIT Supervisor running as root (no user in config file)
+2018-04-10 13:53:38,867 INFO supervisord started with pid 1
+2018-04-10 13:53:39,870 INFO spawned: 'nginx' with pid 9
+2018-04-10 13:53:39,873 INFO spawned: 'django' with pid 10
+2018-04-10 13:53:40,876 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-10 13:53:40,876 INFO success: django entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-04-10 13:54:45,172 WARN received SIGTERM indicating exit request
+2018-04-10 13:54:45,173 INFO waiting for nginx, django to die
+2018-04-10 13:54:45,176 INFO stopped: django (terminated by SIGTERM)
+2018-04-10 13:54:45,257 INFO stopped: nginx (exit status 0)

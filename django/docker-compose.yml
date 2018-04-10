@@ -1,0 +1,6 @@
+python3:
+  image: udaysh/django
+#  volumes:
+#    - "./src/:/app"
+  labels:
+    - "com.lowecloud.proxy=django.docker"
