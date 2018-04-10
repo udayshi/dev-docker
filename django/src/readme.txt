@@ -1,4 +1,4 @@
-#Creating Django Project
+#Creating Django Project (Default root access: uday/admin123)
 -------------------------
 django-admin startproject djangoproject
 

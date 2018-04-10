@@ -44,6 +44,22 @@ if [ "$line" != "$check" ]; then
            build=1
            build_dir='alpine_3.7'
            build_img='alpine3.7';
+    elif [ "python3/" == "$check" ]; then
+           build=1
+           build_dir='python3'
+           build_img='python3';
+    elif [ "flask/" == "$check" ]; then
+               build=1
+               build_dir='flask'
+               build_img='flask';
+  elif [ "flask-ask/" == "$check" ]; then
+               build=1
+               build_dir='flask-ask'
+               build_img='flask-ask';
+    elif [ "django/" == "$check" ]; then
+               build=1
+               build_dir='django'
+               build_img='django';
     elif [ "redis/" == "$check" ]; then
            build=1
            build_dir='redis'
