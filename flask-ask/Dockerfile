@@ -23,7 +23,7 @@ RUN mkdir -p /app/templates
 WORKDIR /app
 COPY ./src/ /app
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 WORKDIR /app
 RUN pip3 install -U  pip==9.0.1
