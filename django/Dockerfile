@@ -13,6 +13,5 @@ COPY ./src/ /app
 
 RUN pip install -r requirements.txt
 #RUN python manage.py collectstatic
-
 EXPOSE 80 443
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
