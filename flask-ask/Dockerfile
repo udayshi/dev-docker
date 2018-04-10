@@ -34,4 +34,4 @@ RUN pip3 install unidecode flask flask-ask requests
 
 EXPOSE 5000
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
-#CMD ["python3", "app.py"]
+
