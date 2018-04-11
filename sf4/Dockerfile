@@ -1,8 +1,7 @@
 FROM udaysh/php7
 MAINTAINER shiuday@gmail.com
 
-RUN apk --no-cache add php7-ini \
-                        php7-pdo \
+RUN apk --no-cache add  php7-pdo \
                         php7-pdo_mysql
 
 # Configure nginx
