@@ -10,7 +10,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
     chmod +x /usr/local/bin/phpunit
 RUN composer self-update
 
-RUN apk --no-cache add php7-mysqli php7-openssl
+RUN apk --no-cache add php7-mysqli php7-openssl php7-ini
 # Cleaning up
 RUN rm -rf /usr/local/src /tmp/* /usr/share/man /var/cache/apk/*
 
