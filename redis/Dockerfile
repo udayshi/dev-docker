@@ -48,9 +48,9 @@ RUN mkdir /data && chown redis:redis /data && mkdir -p /etc/redis
 VOLUME /data
 WORKDIR /data
 COPY docker-entrypoint.sh /usr/local/bin/
-COPY redis.conf /etc/redis.conf
+COPY redis.conf /etc/redis/redis.conf
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 
 EXPOSE 6379
-CMD ["redis-server"]
+CMD ["redis-server","/etc/redis/redis.conf"]
