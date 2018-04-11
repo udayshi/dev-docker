@@ -1,5 +1,7 @@
+
 FROM udaysh/php7
 MAINTAINER shiuday@gmail.com
+
 
 
 # Configure nginx
