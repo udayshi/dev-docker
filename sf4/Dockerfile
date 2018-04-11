@@ -14,7 +14,6 @@ COPY manifest/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 # Add application
 #RUN mkdir -p /app
 WORKDIR /
-
 COPY ./src/app.tar.gz /
 RUN tar -zxf app.tar.gz
 RUN chmod -R 777 app/var/
