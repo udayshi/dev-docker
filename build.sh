@@ -40,6 +40,14 @@ if [ "$line" != "$check" ]; then
            build=1
            build_dir='alpine_3.6'
            build_img='alpine3.6';
+    elif [ "debian-8-slim/" == "$check" ]; then
+               build=1
+               build_dir='debian-8-slim'
+               build_img='debian-8-slim';
+    elif [ "media/" == "$check" ]; then
+               build=1
+               build_dir='media'
+               build_img='media';
     elif [ "alpine_3.7/" == "$check" ]; then
            build=1
            build_dir='alpine_3.7'
