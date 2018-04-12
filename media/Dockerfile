@@ -1,7 +1,7 @@
 FROM udaysh/debian-8-slim
 MAINTAINER shiuday@gmail.com
 
-RUN apt-get -y && apt-get install  \
+RUN apt-get install -y \
             youtube-dl \
             id3v2 \
             avconv
