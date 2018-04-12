@@ -3,7 +3,8 @@ MAINTAINER shiuday@gmail.com
 
 RUN apt-get install -y youtube-dl id3v2 libav-tools
 
-
+WORKDIR /usr/bin
+RUN ln -s avconv ffmpeg
 
 
 # Cleaning up
