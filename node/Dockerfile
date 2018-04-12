@@ -1,9 +1,17 @@
-FROM  mhart/alpine-node
+FROM  udaysh/debian-8-slim
+COPY ./node-v8.11.1-linux-x64.tar /usr/local
+WORKDIR /usr/local
+RUN tar xf node-v8.11.1-linux-x64.tar && mv node-v8.11.1-linux-x64 node-v8.11.1
+WORKDIR /usr/bin
+RUN ln -s /usr/local/node-v8.11.1/bin/node . && ln -s /usr/local/node-v8.11.1/lib/node_modules/npm/bin/npm-cli.js npm
 
-RUN apk --no-cache add supervisor curl vim bash git wget
-RUN npm i yarn -g
-RUN yarn global add nodemon express-generator @angular/cli create-react-app --prefix/usr/local
-RUN yarn global add vue-cli gulp --prefix/usr/local
+
+
+
+RUN npm i yarn -g --prefix/usr/
+RUN ln -s /usr/local/node-v8.11.1/lib/node_modules/yarn/bin/yarn .
+RUN yarn global add nodemon express-generator @angular/cli create-react-app --prefix/usr/
+RUN yarn global add vue-cli gulp --prefix/usr
 
 
 
