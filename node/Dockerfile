@@ -13,7 +13,6 @@ RUN yarn global add vue-cli gulp --prefix/usr/local
 # Configure supervisord
 COPY manifest/config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY manifest/config/nginx.conf /etc/nginx/nginx.conf
-
 #COPY manifest/init.sh /usr/local/bin/init_node.sh
 
 # Add application
