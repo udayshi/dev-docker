@@ -1,0 +1,4 @@
+node:
+  image: udaysh/node9.2
+  labels:
+    - "com.lowecloud.proxy=node.docker"

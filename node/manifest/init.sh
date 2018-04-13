@@ -1,2 +1,2 @@
 #!/bin/bash
-cd /var/www/html/ && /usr/bin/nodemon app.js
+/usr/local/bin/nodemon app.js
