@@ -15,7 +15,9 @@ COPY manifest/config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY manifest/init.sh /usr/local/bin/init_node.sh
 
 # Add application
-WORKDIR /var/www/html
-COPY manifest/src/ /var/www/html/
-RUN cd /var/www/html/ && yarn add express && chmod +x /usr/local/bin/init_node.sh
+RUN mkdir /app
+
+COPY manifest/src/ /app
+WORKDIR /app
+RUN  yarn add express && chmod +x /usr/local/bin/init_node.sh
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
