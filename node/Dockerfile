@@ -1,6 +1,6 @@
 FROM  mhart/alpine-node
 
-RUN apk --no-cache add supervisor curl vim bash git wget
+RUN apk --no-cache add supervisor curl vim bash git wget nginx
 RUN npm i yarn -g
 RUN yarn global add nodemon express-generator @angular/cli create-react-app --prefix/usr/local
 RUN yarn global add vue-cli gulp --prefix/usr/local
