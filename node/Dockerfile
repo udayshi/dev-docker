@@ -16,7 +16,6 @@ COPY manifest/init.sh /usr/local/bin/init_node.sh
 
 # Add application
 RUN mkdir /app
-
 COPY manifest/src/ /app
 WORKDIR /app
 RUN  yarn add express && chmod +x /usr/local/bin/init_node.sh
