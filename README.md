@@ -22,7 +22,6 @@ Make sure you have install docker and docker compose.
 
 
 ## Getting The Image
-
 This image is published in the [Docker Hub]. Simply run this command below to get it to your machine. 
 
 * PHP 7.1.9 (https://hub.docker.com/r/udaysh/php7/). 
